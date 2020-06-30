@@ -1,5 +1,5 @@
 {% set name = "txrm2tiff" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4da2fc6437649eaefabd4327fa32146127bdd1e56bff33d2af7d64c996766bde
+  sha256: fd82699c4d942274f702bbf50afb9492e3b16e09e8f1883ea8743a3e35fe00bd
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - {{ name }} = {{ name }}.scripts.commandline:main
-  skip: True  # [py<35]
+  skip: true  # [py<35]
 
 requirements:
   host:
@@ -46,7 +46,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Converts txrm/xrm files to OME tif/tiff files'
+  summary: Converts txrm/xrm files to OME tif/tiff files
 
   description: |
     Converts txrm/xrm files to OME tif/tiff files.
