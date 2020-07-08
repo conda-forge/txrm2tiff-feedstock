@@ -5,7 +5,7 @@ Home: https://github.com/DiamondLightSource/txrm2tiff
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Converts txrm/xrm files to OME tif/tiff files
 
