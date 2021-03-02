@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - {{ name }} = {{ name }}.scripts.commandline:main
-  skip: true  # [py<36]
+  skip: true  # [py<37]
 
 requirements:
   host:
