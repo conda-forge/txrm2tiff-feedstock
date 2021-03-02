@@ -10,7 +10,7 @@ source:
   sha256: b5a110cda12e66c4020f6a931242f0a3f116749d984f26dd8ebb07e96f98170e
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - {{ name }} = {{ name }}.scripts.commandline:main
@@ -24,7 +24,7 @@ requirements:
     - python
     - numpy >=1.17.4
     - scipy
-    - tifffile >=2020.11.26
+    - tifffile >=2020.9.30
     - omexml-dls >=1.0.3
     - olefile >=0.46
     - pillow >=5.3
