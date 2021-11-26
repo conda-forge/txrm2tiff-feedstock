@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - numpy >=1.17.4
+    - numpy >=1.20.0
     - scipy
     - tifffile >=2020.9.30
     - omexml-dls >=1.0.3
