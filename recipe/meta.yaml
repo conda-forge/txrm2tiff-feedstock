@@ -1,5 +1,5 @@
 {% set name = "txrm2tiff" %}
-{% set version = "1.3.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 2f3207127bb3c9028789eeaa5347099af0f1af0772a9e0efd28b28b8d3f9a12f
+  sha256: cb837911c1b21d96eae94c89dae274bb002420976d18ee2f10887481413e98f3
 
 build:
   number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - {{ name }} = {{ name }}.scripts.commandline:main
+    - {{ name }} = {{ name }}.__main__:main
   skip: true  # [py<37]
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - numpy >=1.17.4
+    - numpy >=1.20.0
     - scipy
     - tifffile >=2020.9.30
     - omexml-dls >=1.0.3
