@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 986853c8909c737bbed90cfb1ba2b1207e5bff229e95d3e43064359f3f609dc8
+  sha256: 5344664b98439fb82d7989df5af79507c8d56866f1647bc6a60a61b72cdb6997
 
 build:
   number: 0
