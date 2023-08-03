@@ -1,5 +1,5 @@
 {% set name = "txrm2tiff" %}
-{% set version = "2.0.7" %}
+{% set version = "2.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 011fa6285bcf728d24bdc1dc1248827dd2ca4abbab05f1d595be555e24945861
+  sha256: 773ba1add22768f201ff1002a15a4fdc41bcb654e67c8211229dddffe4e26172
 
 build:
   number: 0
